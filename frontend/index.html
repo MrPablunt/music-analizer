@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Music Discovery 2.0</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <div class="container">
+        <header>
+            <h1>Welcome to Music Discovery 2.0</h1>
+            <p>Upload an audio file to get insights about its genre, BPM, and key!</p>
+        </header>
+
+        <div class="upload-section">
+            <input type="file" id="audioFile" accept=".mp3, .wav" />
+            <button onclick="uploadFile()">Analyze</button>
+        </div>
+
+        <div id="results" class="results-section">
+            <h2>Analysis Results</h2>
+            <p><strong>Genre:</strong> <span id="genre">-</span></p>
+            <p><strong>BPM:</strong> <span id="bpm">-</span></p>
+            <p><strong>Key:</strong> <span id="key">-</span></p>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
